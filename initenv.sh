@@ -1,10 +1,10 @@
 #!/bin/bash
-if [ ! -d /opt/msscode ]; then
-	sudo mkdir /opt/msscode
-	sudo chown $USER:$USER /opt/msscode
-	sudo chmod 755 /opt/msscode
+if [ ! -d /opt/giai ]; then
+	sudo mkdir /opt/giai
+	sudo chown $USER:$USER /opt/giai
+	sudo chmod 755 /opt/giai
 fi
 export INSTDIR=`pwd`
-cd /opt/msscode
-export RELEASE_VERSION="2.13.42-alpha17-202611160420"
-export SNAPSHOT_VERSION="2.13.42-alpha17-202611160420"
+cd /opt/giai
+export RELEASE_VERSION="2.13.42-alpha17-202611170000"
+export SNAPSHOT_VERSION="2.13.42-alpha17-202611170000"

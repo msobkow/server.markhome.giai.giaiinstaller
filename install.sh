@@ -1,23 +1,23 @@
 #!/bin/bash
-if [ ! -d /opt/msscode ]; then
-	sudo mkdir /opt/msscode
-	sudo chown $USER:$USER /opt/msscode
-	sudo chmod 755 /opt/msscode
+if [ ! -d /opt/giai ]; then
+	sudo mkdir /opt/giai
+	sudo chown $USER:$USER /opt/giai
+	sudo chmod 755 /opt/giai
 fi
 export INSTDIR=`pwd`
 . $INSTDIR/initenv.sh
 . $INSTDIR/instmodels.sh
 . $INSTDIR/instkbase.sh
 # Install the bin directory
-if [ -d /opt/msscode/${RELEASE_VERSION} ]; then
-	echo "Removing old installation at /opt/msscode/${RELEASE_VERSION} ..."
-	rm -Rf /opt/msscode/${RELEASE_VERSION}
+if [ -d /opt/giai/${RELEASE_VERSION} ]; then
+	echo "Removing old installation at /opt/giai/${RELEASE_VERSION} ..."
+	rm -Rf /opt/giai/${RELEASE_VERSION}
 fi
-mkdir /opt/msscode/${RELEASE_VERSION}
-cp -R $INSTDIR/bin-v2_13 /opt/msscode/${RELEASE_VERSION}/
-cp -R $INSTDIR/website-v2_13 /opt/msscode/${RELEASE_VERSION}/
-if [ -L /opt/msscode/org.msscf.msscf.v2_13 ]; then
-	rm /opt/msscode/org.msscf.msscf.v2_13
+mkdir /opt/giai/${RELEASE_VERSION}
+cp -R $INSTDIR/bin-v2_13 /opt/giai/${RELEASE_VERSION}/
+cp -R $INSTDIR/website-v2_13 /opt/giai/${RELEASE_VERSION}/
+if [ -L /opt/giai/org.msscf.msscf.v2_13 ]; then
+	rm /opt/giai/org.msscf.msscf.v2_13
 fi
 ln -s ./${RELEASE_VERSION} ./org.msscf.msscf.v2_13
 if [ ! -f $HOME/.msscfrc ]; then
@@ -27,7 +27,7 @@ if [ ! -f $HOME/.msscfrc ]; then
 	echo ":q" >>ex.cmd
 	ex $HOME/.msscfrc <ex.cmd
 	rm ex.cmd
-	echo "export MSSCFHOME=/opt/msscode" >>$HOME/.profile
-	echo "export MSSCF_HOME=/opt/msscode" >>$HOME/.profile
+	echo "export MSSCFHOME=/opt/giai" >>$HOME/.profile
+	echo "export MSSCF_HOME=/opt/giai" >>$HOME/.profile
 	echo "export PATH=\"\$MSSCF_HOME/org.msscf.msscf.v2_13/bin-v2_13/:\$PATH\"" >>$HOME/.profile
 fi
