@@ -9,5 +9,5 @@ else
 	buildString="${BUILD_STAMP}"
 fi
 cd $GIAI_HOME/server.markhome.giai.giaiycf/bin-v2_13/
-./CFManufactureCode213Java.bash ${buildString} server-markhome-giai-InterNet-3-1-InterNet server-markhome-giai-3-1-layered+giai ${toolsetNames}
+./CFManufactureCode213Java.bash ${buildString} server-markhome-giai-Fractal-1-1-GiKb server-markhome-giai-3-1-layered+giai ${toolsetNames}
 cd $SaveDir
