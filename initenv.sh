@@ -6,5 +6,5 @@ if [ ! -d /opt/giai ]; then
 fi
 export INSTDIR=`pwd`
 cd /opt/giai
-export RELEASE_VERSION="2.13.42-alpha17-202611170000"
-export SNAPSHOT_VERSION="2.13.42-alpha17-202611170000"
+export RELEASE_VERSION="2.13.42-alpha18-202611170420"
+export SNAPSHOT_VERSION="2.13.42-alpha18-202611170420"

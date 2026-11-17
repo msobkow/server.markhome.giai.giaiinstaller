@@ -6,7 +6,7 @@ if [ ! -d /opt/giai ]; then
 fi
 export INSTDIR=`pwd`
 cd /opt/giai
-export SNAPSHOT_VERSION="2.13.42-alpha17-202611170000"
+export SNAPSHOT_VERSION="2.13.42-alpha18-202611170420"
 # Install the new knowledge base
 tar xfz $INSTDIR/org.msscf.msscf.v2_13.cfkbase-${SNAPSHOT_VERSION}.tgz
 if [ -L /opt/giai/org.msscf.msscf.v2_13.cfkbase ]; then
