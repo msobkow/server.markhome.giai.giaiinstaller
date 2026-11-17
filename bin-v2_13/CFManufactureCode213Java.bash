@@ -1,6 +1,7 @@
 #!/bin/bash
+export SaveDir=`pwd`
 export cmdargs=$*
-cd $MSSCF_HOME/v2_13-maven/bin-v2_13
+cd $GIAI_HOME/server.markhome.giai.giaiycf/bin-v2_13/
 if [ "$LOG4J2_CONF" != "" ]; then
 	export JAVA_LOG4J="-Dlog4j.configurationFile=$LOG4J2_CONF"
 else
@@ -16,5 +17,5 @@ if [ "$MCF_RULE_JAR" != "" ]; then
 else
 	export ruleargs=""
 fi
-"$JAVA" $JAVA_LOG4J -ea -Xms1023M $ruleargs -jar ./org.msscf.msscf.v2_13.CFCli-2.13.42-alpha15-202611010900-spring-boot.jar $cmdargs
-cd $MSSCF_HOME
+"$JAVA" $JAVA_LOG4J -ea -Xms1023M $ruleargs -jar ./org.msscf.msscf.v2_13.CFCli-2.13.42-alpha18-202611170420-spring-boot.jar $cmdargs
+cd $SaveDir
