@@ -44,21 +44,13 @@ You may obtain a copy of the Open Source Licenses supported at:
 
     http://gnu.org/
 
-Unless required by applicable International or Canadian Law or agreed to in writing, software distributed under the Licenses is distributed on
-an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the Licenses for the specific language governing
-permissions and limitations under the Licenses.
+Unless required by applicable law or agreed to in writing, software distributed under the Licenses is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+either express or implied, unless required by International Law and Treaty Agreements with Canada as a Signatory as interpreted by the International Criminal Court, the Canadian
+Constition, the Canadian Charter of Rights, or Canadian Federal Law as interpreted by our Supreme Court of Canada.  See the Licenses for the specific language governing permissions
+and limitations under the Licenses.
 
 If you wish to modify and use this code without publishing your changes, or integrate it with proprietary code, please contact Mark Stephen
 Sobkow for a commercial license at mark.sobkow@gmail.com.
-
-INSTALLATION INSTRUCTIONS
-
-Download the latest release of the installer archive from the releases for this installer project. Extract the contents somewhere, and run the "install.sh" script
-enclosed. This will install the GiAI 1.1 Yorkton Code Fractal 2.13.42 release with the required Knowledge Base and Business Application Model files needed to run
-the tool. It will also create a ".msscfrc" file configured to locate those resources when running the tool in your HOME directory if it does not already exist.
-Add the newly created .../bin-v2_13 directory that was created to your .profile PATH, and source it or manually do a export PATH=... command to use the installed copy
-of Yorkton Code Fractal. You should then be able to do "ManufactureBusModel31Java.bash" and have it produce the apprpriate source code to a generation directory in your
-HOME directory. Have fun!
 
 SPDX-License-Identifier: LGPL-3.0-or-later
 SPDX-License-Identifier: GPL-3.0-or-later
